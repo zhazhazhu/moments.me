@@ -1,13 +1,9 @@
 ---
-layout: home
-hero:
-  name: Zhazhazhu
-  text: This is my moments
-  tagline: Lorem ipsum...
+layout: doc
 ---
 
 <script setup>
-import Home from '/@theme/components/Home.vue'
+import Home from './Home.vue'
 </script>
 
 <Home />

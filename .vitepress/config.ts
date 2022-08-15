@@ -11,10 +11,11 @@ export default defineConfig({
   title: "Zhazhazhu",
   srcDir: "moments",
   themeConfig: {
+    logo: "/logo.svg",
     nav,
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright © 2019-present Evan You",
+      copyright: "Copyright © 2022-present Zhazhazhu",
     },
   },
 });
