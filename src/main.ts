@@ -1,6 +1,7 @@
 import "@unocss/reset/tailwind.css";
 import "uno.css";
 import "./styles/main.css";
+import "./styles/markdown.css";
 
 import dayjs from "dayjs";
 import LocalizedFormat from "dayjs/plugin/localizedFormat.js";
