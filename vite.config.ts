@@ -116,7 +116,9 @@ export default defineConfig({
       svgo: false,
     }),
   ],
-
+  server: {
+    host: true,
+  },
   build: {
     rollupOptions: {
       onwarn(warning, next) {

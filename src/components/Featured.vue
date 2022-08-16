@@ -8,11 +8,11 @@ defineProps<{
 </script>
 
 <template>
-  <div class="w-100% features">
+  <div class="features text-center w-100%">
     <div
-      v-for="(route, idx) in routes"
+      v-for="route in routes"
       :key="route.path"
-      class="slick-slide relative w-350px h-400px"
+      class="slick-slide relative w[calc(25%-10px)] mx-5px"
     >
       <img :src="route.image" />
       <div class="img-overlay"></div>
@@ -26,7 +26,11 @@ defineProps<{
           {{ route.description }}
         </div>
         <AppLink :to="route.path">
-          <button class="b-1px px-14px py-4px m-t-10px">Read More</button>
+          <button
+            class="b-1px px-14px py-4px m-t-10px hover:bg-white hover:text-#2b2b2b b-color-white"
+          >
+            Read More
+          </button>
         </AppLink>
       </div>
     </div>
@@ -39,6 +43,7 @@ defineProps<{
   overflow-x: scroll;
   overflow-y: hidden;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
 }
 .img-overlay::before {
   position: absolute;
@@ -52,6 +57,12 @@ defineProps<{
 .slick-slide {
   white-space: nowrap;
   display: inline-block;
+  @media (max-width: 768px) {
+    width: calc(100% - 10px);
+  }
+  @media (max-width: 1200px) and (min-width: 768px) {
+    width: calc(100% / 3);
+  }
 }
 
 .slick-slide img {

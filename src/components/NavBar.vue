@@ -15,11 +15,11 @@
       <div class="spacer" />
       <div class="right">
         <router-link to="/project" title="PROJECT">
-          <span class="lt-md:hidden">Project</span>
+          <span class="lt-md:hidden">PROJECT</span>
           <div i-ri-article-line md:hidden />
         </router-link>
         <router-link to="/about" title="ABOUT">
-          <span class="lt-md:hidden">About</span>
+          <span class="lt-md:hidden">ABOUT</span>
           <div i-ri-article-line md:hidden />
         </router-link>
       </div>
