@@ -60,6 +60,7 @@
   display: grid;
   grid-gap: 1.2rem;
   grid-auto-flow: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .nav .right > * {
