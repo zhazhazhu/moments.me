@@ -10,16 +10,28 @@ jobs:
   build-and-deploy:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16]
     steps:
       # 拉取代码
       - name: Checkout
         uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+        version: 7
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'pnpm'
+    - name: Install dependencies
         with:
           persist-credentials: false
 
       # 生成静态文件
       - name: Build
-        run: pnpm i && npm run build
+        run: pnpm install && pnpm build
 
       # 部署到 GitHub Pages
       - name: Deploy

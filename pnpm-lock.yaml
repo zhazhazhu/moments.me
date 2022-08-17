@@ -35,7 +35,6 @@ specifiers:
   markdown-it-shiki: ^0.5.1
   markdown-it-table-of-contents: ^0.6.0
   nprogress: ^0.2.0
-  pnpm: ^7.6.0
   rimraf: ^3.0.2
   typescript: ^4.7.4
   unocss: ^0.44.7
@@ -91,7 +90,6 @@ devDependencies:
   markdown-it-link-attributes: 4.0.1
   markdown-it-shiki: 0.5.1
   markdown-it-table-of-contents: 0.6.0
-  pnpm: 7.9.0
   rimraf: 3.0.2
   typescript: 4.7.4
   unocss: 0.44.7_vite@3.0.7
@@ -1370,6 +1368,11 @@ packages:
     peerDependencies:
       '@interactjs/core': 1.10.2
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/core':
+        optional: true
+      '@interactjs/utils':
+        optional: true
     optionalDependencies:
       '@interactjs/interact': 1.10.2
     dev: false
@@ -1379,6 +1382,11 @@ packages:
     peerDependencies:
       '@interactjs/core': 1.10.2
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/core':
+        optional: true
+      '@interactjs/utils':
+        optional: true
     dependencies:
       '@interactjs/core': 1.10.2_@interactjs+utils@1.10.2
       '@interactjs/utils': 1.10.2
@@ -1394,6 +1402,9 @@ packages:
     resolution: {integrity: sha512-yYqzOawwvWd1NNnlqZdzrXoOMFafQ2/ws85erpJqdaNMQE221z2uP+QYhFRLQRgYUlTbHFfmjDpzhuJgq4uA8Q==}
     peerDependencies:
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/utils':
+        optional: true
     dependencies:
       '@interactjs/utils': 1.10.2
     optionalDependencies:
@@ -1405,6 +1416,11 @@ packages:
     peerDependencies:
       '@interactjs/core': 1.10.2
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/core':
+        optional: true
+      '@interactjs/utils':
+        optional: true
     optionalDependencies:
       '@interactjs/interact': 1.10.2
     dev: false
@@ -1414,6 +1430,11 @@ packages:
     peerDependencies:
       '@interactjs/core': 1.10.2
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/core':
+        optional: true
+      '@interactjs/utils':
+        optional: true
     dependencies:
       '@interactjs/core': 1.10.2_@interactjs+utils@1.10.2
       '@interactjs/utils': 1.10.2
@@ -1429,6 +1450,9 @@ packages:
     resolution: {integrity: sha512-SA5KRGo+gFJOhBj1Z2dLHhAf0/2nyHNd4SQ460aIQ3jj/QhqbJW6kGzmh7hBa2FzVGgxLhcQu7NZaP4rnDfUNw==}
     peerDependencies:
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/utils':
+        optional: true
     dependencies:
       '@interactjs/utils': 1.10.2
     dev: false
@@ -1451,6 +1475,11 @@ packages:
       '@interactjs/core': 1.10.2
       '@interactjs/modifiers': 1.10.2
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/core':
+        optional: true
+      '@interactjs/utils':
+        optional: true
     dependencies:
       '@interactjs/core': 1.10.2_@interactjs+utils@1.10.2
       '@interactjs/modifiers': 1.10.2_oyguvmurtkltc2plhqtrncjgly
@@ -1496,6 +1525,11 @@ packages:
     peerDependencies:
       '@interactjs/core': 1.10.2
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/core':
+        optional: true
+      '@interactjs/utils':
+        optional: true
     dependencies:
       '@interactjs/snappers': 1.10.2
     optionalDependencies:
@@ -1507,6 +1541,11 @@ packages:
     peerDependencies:
       '@interactjs/core': 1.10.2
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/core':
+        optional: true
+      '@interactjs/utils':
+        optional: true
     dependencies:
       '@interactjs/core': 1.10.2_@interactjs+utils@1.10.2
       '@interactjs/snappers': 1.10.2_@interactjs+utils@1.10.2
@@ -1524,6 +1563,11 @@ packages:
     peerDependencies:
       '@interactjs/core': 1.10.2
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/core':
+        optional: true
+      '@interactjs/utils':
+        optional: true
     dependencies:
       '@interactjs/core': 1.10.2_@interactjs+utils@1.10.2
       '@interactjs/utils': 1.10.2
@@ -1536,6 +1580,11 @@ packages:
     peerDependencies:
       '@interactjs/core': 1.10.2
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/core':
+        optional: true
+      '@interactjs/utils':
+        optional: true
     dependencies:
       '@interactjs/core': 1.10.2_@interactjs+utils@1.10.2
       '@interactjs/utils': 1.10.2
@@ -1552,6 +1601,11 @@ packages:
     peerDependencies:
       '@interactjs/core': 1.10.2
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/core':
+        optional: true
+      '@interactjs/utils':
+        optional: true
     dependencies:
       '@interactjs/core': 1.10.2_@interactjs+utils@1.10.2
       '@interactjs/utils': 1.10.2
@@ -1563,12 +1617,18 @@ packages:
     resolution: {integrity: sha512-wQ41Vn5GRn6VavjIEUtTkd9d5QgdKgC4+CPW0fjKkiQclLBmaic7VibNETO8twN0Jx5e73EoPj9K2nAVHIA0hA==}
     peerDependencies:
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/utils':
+        optional: true
     dev: false
 
   /@interactjs/snappers/1.10.2_@interactjs+utils@1.10.2:
     resolution: {integrity: sha512-wQ41Vn5GRn6VavjIEUtTkd9d5QgdKgC4+CPW0fjKkiQclLBmaic7VibNETO8twN0Jx5e73EoPj9K2nAVHIA0hA==}
     peerDependencies:
       '@interactjs/utils': 1.10.2
+    peerDependenciesMeta:
+      '@interactjs/utils':
+        optional: true
     dependencies:
       '@interactjs/utils': 1.10.2
     dev: false
@@ -4616,12 +4676,6 @@ packages:
       jsonc-parser: 3.1.0
       mlly: 0.5.12
       pathe: 0.3.4
-    dev: true
-
-  /pnpm/7.9.0:
-    resolution: {integrity: sha512-xkIVw73yJm/h5M4VvFIS5Q+gQCRDrp3r92g58PtcCK86aZCa7EQ6q6ivdfTAz0KsAVgloA6Anub28n6wju5v3w==}
-    engines: {node: '>=14.6'}
-    hasBin: true
     dev: true
 
   /postcss/8.4.16:
