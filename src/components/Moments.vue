@@ -42,4 +42,4 @@ const posts = routes.filter((i) => i.type === "post");
   </div>
 </template>
 
-<style lang="less" scoped></style>
+<style lang="less"></style>
