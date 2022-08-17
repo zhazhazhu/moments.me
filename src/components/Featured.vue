@@ -1,31 +1,30 @@
 <script lang="ts" setup>
 import { Moment } from "~/types";
-import AppLink from "./AppLink.vue";
 
-defineProps<{
-  routes: Moment[];
+const props = defineProps<{
+  data: Moment[];
 }>();
 </script>
 
 <template>
   <div class="features text-center w-100%">
     <div
-      v-for="route in routes"
-      :key="route.path"
+      v-for="item in data"
+      :key="item.path"
       class="slick-slide relative w[calc(25%-10px)] mx-5px"
     >
-      <img :src="route.image" />
+      <img :src="item.image" />
       <div class="img-overlay"></div>
       <div
         class="card-content absolute bottom-0 w-100% h-180px text-center p-30px"
       >
         <div class="text-13px">
-          {{ route.title }}
+          {{ item.title }}
         </div>
         <div class="text-28px">
-          {{ route.description }}
+          {{ item.description }}
         </div>
-        <AppLink :to="route.path">
+        <AppLink :to="item.path">
           <button
             class="b-1px px-14px py-4px m-t-10px hover:bg-white hover:text-#2b2b2b b-color-white"
           >

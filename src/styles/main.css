@@ -84,3 +84,30 @@ h2 + p > em:first-child {
 html:not(.dark) [img-dark] {
   display: none;
 }
+
+#app {
+  width: 100vw;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 860px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

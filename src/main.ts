@@ -25,7 +25,8 @@ const scrollBehavior = (to: any, from: any, savedPosition: any) => {
 export const createApp = ViteSSG(
   App,
   { routes, scrollBehavior },
-  ({ router, isClient }) => {
+  ({ app, router, isClient }) => {
+    // app.use(VueGridLayout);
     dayjs.extend(LocalizedFormat);
 
     if (isClient) {

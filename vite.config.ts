@@ -92,11 +92,12 @@ export default defineConfig({
 
     AutoImport({
       imports: ["vue", "vue-router", "@vueuse/core", "@vueuse/head"],
+      dts: "./types/auto-imports.d.ts",
     }),
 
     Components({
       extensions: ["vue", "md"],
-      dts: true,
+      dts: "./types/components.d.ts",
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       resolvers: [
         IconsResolver({

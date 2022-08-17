@@ -2,6 +2,7 @@
 import { useRouter } from "vue-router";
 import { Moment } from "~/types";
 import Featured from "./Featured.vue";
+import Posts from "./Posts.vue";
 
 defineProps<{
   moments?: Moment[];
@@ -36,7 +37,8 @@ const posts = routes.filter((i) => i.type === "post");
 
 <template>
   <div class="moments">
-    <Featured :routes="features"></Featured>
+    <Featured :data="features"></Featured>
+    <Posts :data="posts"></Posts>
   </div>
 </template>
 

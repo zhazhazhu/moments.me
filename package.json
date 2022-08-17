@@ -15,7 +15,8 @@
     "dayjs": "^1.11.4",
     "nprogress": "^0.2.0",
     "vue": "^3.2.37",
-    "vue-router": "4.1.2"
+    "vue-router": "4.1.2",
+    "vue3-grid-layout": "^1.0.0"
   },
   "devDependencies": {
     "@iconify/json": "^2.1.72",
@@ -63,9 +64,6 @@
   "pnpm": {
     "overrides": {
       "@vueuse/head": "0.7.0"
-    },
-    "peer": {
-      "strict-peer-dependencies": false
     }
   }
 }
