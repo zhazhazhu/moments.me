@@ -1,6 +1,3 @@
 {
-  "recommendations": [
-    "johnsoncodehk.volar",
-    "esbenp.prettier-vscode"
-  ]
+  "recommendations": ["johnsoncodehk.volar", "esbenp.prettier-vscode"]
 }

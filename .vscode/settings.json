@@ -24,9 +24,7 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
-  "i18n-ally.localesPaths": [
-    "src/locales"
-  ],
+  "i18n-ally.localesPaths": ["src/locales"],
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -51,5 +49,11 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "commentTranslate.multiLineMerge": true
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "commentTranslate.multiLineMerge": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
