@@ -10,3 +10,5 @@ dist
 .idea
 .vite-node
 .DS_Store
+dist-ssr
+.vite-ssg-temp

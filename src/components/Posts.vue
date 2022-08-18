@@ -2,9 +2,16 @@
 import { useWindowSize } from "@vueuse/core";
 import { useCeil } from "@vueuse/math";
 import type { LayoutItem } from "vue3-grid-layout";
-import { GridItem, GridLayout } from "vue3-grid-layout";
 import { Moment } from "~/types";
 import AppLink from "./AppLink.vue";
+
+const GridLayout = defineAsyncComponent(
+  async () => (await import("vue3-grid-layout")).GridLayout
+);
+
+const GridItem = defineAsyncComponent(
+  async () => (await import("vue3-grid-layout")).GridItem
+);
 
 const props = defineProps<{
   data: Moment[];
