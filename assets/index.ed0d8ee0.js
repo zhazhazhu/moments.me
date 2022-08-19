@@ -1,0 +1,1 @@
+import{d as c,o as n,c as r,b as s}from"./app.3f094707.js";const _={};function a(e,t){return"1"}const u=c(_,[["render",a]]),m={class:"markdown-body"},f="Zhazhazhu's Project",h=!0,x={__name:"index",setup(e,{expose:t}){return t({frontmatter:{title:"Zhazhazhu's Project",plum:!0}}),(d,i)=>{const o=u;return n(),r("div",m,[s(o)])}}};export{x as default,h as plum,f as title};
