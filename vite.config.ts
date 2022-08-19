@@ -1,11 +1,6 @@
 import Vue from "@vitejs/plugin-vue";
 import fs from "fs-extra";
 import matter from "gray-matter";
-import anchor from "markdown-it-anchor";
-import LinkAttributes from "markdown-it-link-attributes";
-import Shiki from "markdown-it-shiki";
-// @ts-expect-error missing types
-import TOC from "markdown-it-table-of-contents";
 import { resolve } from "path";
 import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
@@ -44,49 +39,18 @@ export default defineConfig({
       pagesDir: "pages",
       extendRoute(route) {
         const path = resolve(__dirname, route.component.slice(1));
-
-        if (!path.includes("projects.md")) {
-          const md = fs.readFileSync(path, "utf-8");
-          const { data } = matter(md);
-          route.meta = Object.assign(route.meta || {}, { frontmatter: data });
-        }
-
+        const md = fs.readFileSync(path, "utf-8");
+        const { data } = matter(md);
+        route.meta = Object.assign(route.meta || {}, { frontmatter: data });
         return route;
       },
     }),
 
     Markdown({
-      wrapperComponent: "post",
-      wrapperClasses: "prose m-auto",
-      headEnabled: true,
       markdownItOptions: {
-        quotes: "\"\"''",
-      },
-      markdownItSetup(md) {
-        md.use(Shiki, {
-          theme: {
-            light: "vitesse-light",
-            dark: "vitesse-dark",
-          },
-        });
-        md.use(anchor, {
-          permalink: anchor.permalink.linkInsideHeader({
-            symbol: "#",
-            renderAttrs: () => ({ "aria-hidden": "true" }),
-          }),
-        });
-
-        md.use(LinkAttributes, {
-          matcher: (link: string) => /^https?:\/\//.test(link),
-          attrs: {
-            target: "_blank",
-            rel: "noopener",
-          },
-        });
-
-        md.use(TOC, {
-          includeLevel: [1, 2, 3],
-        });
+        html: true,
+        linkify: true,
+        typographer: true,
       },
     }),
 
@@ -120,13 +84,7 @@ export default defineConfig({
   server: {
     host: true,
   },
-  build: {
-    rollupOptions: {
-      onwarn(warning, next) {
-        if (warning.code !== "UNUSED_EXTERNAL_IMPORT") next(warning);
-      },
-    },
-  },
+  build: {},
   ssgOptions: {
     formatting: "minify",
     format: "cjs",
