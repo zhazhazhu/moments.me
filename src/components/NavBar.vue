@@ -1,4 +1,10 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const isDark = useDark();
+
+function toggleDark() {
+  isDark.value = !isDark.value;
+}
+</script>
 
 <template>
   <header class="header z-40">
@@ -37,6 +43,10 @@
           class="lt-md:hidden"
         >
           <div class="i-mdi-github-face text-24px" />
+        </a>
+        <a class="select-none" title="Toggle Color Scheme" @click="toggleDark">
+          <ri-moon-line v-show="isDark" />
+          <ri-sun-line v-show="!isDark" />
         </a>
       </div>
     </nav>

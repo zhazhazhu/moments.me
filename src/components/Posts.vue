@@ -61,7 +61,7 @@ const layout = computed<GridLayoutItem[]>(() => {
       x: x,
       y: columnHeight,
       w: 1,
-      h: (windowCol.value + rowNum + i) % 2 === 0 ? 4 : 3,
+      h: (windowCol.value + rowNum + i) % 2 === 0 ? 3 : 2.5,
       data: item,
     });
     x++;
@@ -77,7 +77,7 @@ const layout = computed<GridLayoutItem[]>(() => {
 <template>
   <div class="container m-auto">
     <GridLayout
-      class="w-100%"
+      class="w-100% m-auto"
       v-model:layout="layout"
       :col-num="12"
       :cols="{ lg: 3, md: 3, sm: 2, xs: 2, xxs: 1 }"
@@ -100,7 +100,12 @@ const layout = computed<GridLayoutItem[]>(() => {
         :i="item.i"
       >
         <div class="content w-100% h-100%">
-          <img :src="item.data?.image" class="" fit="contain" />
+          <img
+            :src="item.data?.image"
+            class=""
+            fit="contain"
+            :style="{ height: item.h === 3 ? '70%' : '60%' }"
+          />
           <div class="flex-center m-t-10px">
             <template v-for="tag in item.data?.tags">
               <div class="m-w-100px px-4px text-12px">
@@ -163,7 +168,7 @@ button {
 }
 @media screen and (max-width: 1200px) {
   .container {
-    width: 840px;
+    width: 700px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -184,7 +189,6 @@ button {
 .container :deep(img) {
   object-fit: cover;
   width: 100%;
-  height: 65%;
 }
 .container :deep(.desc) {
   max-height: 50px;
