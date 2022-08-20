@@ -1,0 +1,1 @@
+import{o,c as s,b as n,_ as a}from"./app.26166c0d.js";const c={class:"markdown-body"},p="Zhazhazhu's Moments",h=!0,i={__name:"index",setup(r,{expose:t}){return t({frontmatter:{title:"Zhazhazhu's Moments",plum:!0}}),(_,u)=>{const e=a;return o(),s("div",c,[n(e)])}}};export{i as default,h as plum,p as title};

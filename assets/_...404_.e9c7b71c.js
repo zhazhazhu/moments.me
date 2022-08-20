@@ -1,1 +1,0 @@
-import{o as e,c as s,a as t}from"./app.2cd57102.js";const c={class:"markdown-body"},n=t("h1",null,"404",-1),a=t("p",null,"Nice to meet you tho!",-1),_=[n,a],h={__name:"[...404]",setup(r,{expose:o}){return o({frontmatter:{}}),(l,m)=>(e(),s("div",c,_))}};export{h as default};
