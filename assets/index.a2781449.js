@@ -1,0 +1,1 @@
+import{d as c,o as n,c as r,b as s}from"./app.2cd57102.js";const _={};function a(e,t){return"Hello"}const u=c(_,[["render",a]]),m={class:"markdown-body"},f="Zhazhazhu's Project",h=!0,x={__name:"index",setup(e,{expose:t}){return t({frontmatter:{title:"Zhazhazhu's Project",plum:!0}}),(p,d)=>{const o=u;return n(),r("div",m,[s(o)])}}};export{x as default,h as plum,f as title};
