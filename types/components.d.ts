@@ -19,6 +19,5 @@ declare module '@vue/runtime-core' {
     RiSunLine: typeof import('~icons/ri/sun-line')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    ToggleTheme: typeof import('./../src/components/ToggleTheme.vue')['default']
   }
 }

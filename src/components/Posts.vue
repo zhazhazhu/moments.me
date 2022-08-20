@@ -161,9 +161,9 @@ button {
   font-size: 12px;
   border-bottom: 1px solid;
 }
-@media screen and (min-width: 1200px) and (max-width: 2000px) {
+@media screen and (min-width: 1200px) and (max-width: 3000px) {
   .container {
-    width: 1040px;
+    width: 1000px;
   }
 }
 @media screen and (max-width: 1200px) {
