@@ -7,89 +7,94 @@ import AutoImport from "unplugin-auto-import/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import Icons from "unplugin-icons/vite";
 import Components from "unplugin-vue-components/vite";
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv } from "vite";
 import Inspect from "vite-plugin-inspect";
 import Pages from "vite-plugin-pages";
 import Markdown from "vite-plugin-vue-markdown";
 import SVG from "vite-svg-loader";
 
-export default defineConfig({
-  base: "https://cdn.jsdelivr.net/gh/zhazhazhu/moments.me@gh-pages",
-  // base:"https://zhazhazhu.github.io/moments.me",
+export default defineConfig(({ mode, command }) => {
+  const root = process.cwd();
+  const env = loadEnv(mode, root);
 
-  resolve: {
-    alias: [{ find: "~/", replacement: `${resolve(__dirname, "src")}/` }],
-  },
-  optimizeDeps: {
-    include: [
-      "vue",
-      "vue-router",
-      "@vueuse/core",
-      "dayjs",
-      "dayjs/plugin/localizedFormat",
-    ],
-  },
-  plugins: [
-    UnoCSS(),
+  return {
+    base: command === "build" ? env.VITE_CDN : "/",
+    // base:"https://zhazhazhu.github.io/moments.me",
 
-    Vue({
-      include: [/\.vue$/, /\.md$/],
-      reactivityTransform: true,
-    }),
-
-    Pages({
-      extensions: ["vue", "md"],
-      pagesDir: "pages",
-      extendRoute(route) {
-        const path = resolve(__dirname, route.component.slice(1));
-        const md = fs.readFileSync(path, "utf-8");
-        const { data } = matter(md);
-        route.meta = Object.assign(route.meta || {}, { frontmatter: data });
-        return route;
-      },
-    }),
-
-    Markdown({
-      markdownItOptions: {
-        html: true,
-        linkify: true,
-        typographer: true,
-      },
-    }),
-
-    AutoImport({
-      imports: ["vue", "vue-router", "@vueuse/core", "@vueuse/head"],
-      dts: "./types/auto-imports.d.ts",
-    }),
-
-    Components({
-      extensions: ["vue", "md"],
-      dts: "./types/components.d.ts",
-      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-      resolvers: [
-        IconsResolver({
-          componentPrefix: "",
-        }),
+    resolve: {
+      alias: [{ find: "~/", replacement: `${resolve(__dirname, "src")}/` }],
+    },
+    optimizeDeps: {
+      include: [
+        "vue",
+        "vue-router",
+        "@vueuse/core",
+        "dayjs",
+        "dayjs/plugin/localizedFormat",
       ],
-    }),
+    },
+    plugins: [
+      UnoCSS(),
 
-    Inspect(),
+      Vue({
+        include: [/\.vue$/, /\.md$/],
+        reactivityTransform: true,
+      }),
 
-    Icons({
-      defaultClass: "inline",
-      defaultStyle: "vertical-align: sub;",
-    }),
+      Pages({
+        extensions: ["vue", "md"],
+        pagesDir: "pages",
+        extendRoute(route) {
+          const path = resolve(__dirname, route.component.slice(1));
+          const md = fs.readFileSync(path, "utf-8");
+          const { data } = matter(md);
+          route.meta = Object.assign(route.meta || {}, { frontmatter: data });
+          return route;
+        },
+      }),
 
-    SVG({
-      svgo: false,
-    }),
-  ],
-  server: {
-    host: true,
-  },
-  build: {},
-  ssgOptions: {
-    formatting: "minify",
-    format: "cjs",
-  },
+      Markdown({
+        markdownItOptions: {
+          html: true,
+          linkify: true,
+          typographer: true,
+        },
+      }),
+
+      AutoImport({
+        imports: ["vue", "vue-router", "@vueuse/core", "@vueuse/head"],
+        dts: "./types/auto-imports.d.ts",
+      }),
+
+      Components({
+        extensions: ["vue", "md"],
+        dts: "./types/components.d.ts",
+        include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+        resolvers: [
+          IconsResolver({
+            componentPrefix: "",
+          }),
+        ],
+      }),
+
+      Inspect(),
+
+      Icons({
+        defaultClass: "inline",
+        defaultStyle: "vertical-align: sub;",
+      }),
+
+      SVG({
+        svgo: false,
+      }),
+    ],
+    server: {
+      host: true,
+    },
+    build: {},
+    ssgOptions: {
+      formatting: "minify",
+      format: "cjs",
+    },
+  };
 });

@@ -19,7 +19,9 @@ const routes: Moment[] = router
   .filter((i) => !i.path.endsWith(".html"))
   .map((i) => ({
     path: i.path,
-    image: i.meta.frontmatter.image,
+    image: import.meta.env.DEV
+      ? ""
+      : import.meta.env.VITE_CDN + i.meta.frontmatter.image,
     title: i.meta.frontmatter.title,
     date: i.meta.frontmatter.date,
     lang: i.meta.frontmatter.lang,
