@@ -1,5 +1,5 @@
 <script lang="ts" setup></script>
 
-<template>1</template>
+<template>Hello</template>
 
 <style lang="less" scoped></style>
