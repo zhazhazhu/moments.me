@@ -146,6 +146,12 @@ const layout = computed<GridLayoutItem[]>(() => {
 button {
   color: #ff6f00;
 }
+.container {
+  .vue-grid-item,
+  .vue-grid-item.no-touch {
+    touch-action: auto;
+  }
+}
 .page > .active {
   font-size: 12px;
   border-bottom: 1px solid;
