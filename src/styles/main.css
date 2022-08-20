@@ -9,9 +9,9 @@ html {
 }
 
 html.dark {
-  --c-bg: #242424;
-  --c-scrollbar: #111;
-  --c-scrollbar-hover: #222;
+  --c-bg: #1b1b1b;
+  --c-scrollbar: rgb(41, 41, 41);
+  --c-scrollbar-hover: rgb(58, 58, 58);
 }
 
 html {

@@ -8,6 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppLink: typeof import('./../src/components/AppLink.vue')['default']
+    FeatherTwitter: typeof import('~icons/feather/twitter')['default']
     Featured: typeof import('./../src/components/Featured.vue')['default']
     Footer: typeof import('./../src/components/Footer.vue')['default']
     Moments: typeof import('./../src/components/Moments.vue')['default']

@@ -16,12 +16,28 @@
       <div class="right">
         <router-link to="/project" title="PROJECT">
           <span class="lt-md:hidden">PROJECT</span>
-          <div i-ri-article-line md:hidden />
+          <div i-material-symbols-list-alt-rounded md:hidden text-18px />
         </router-link>
         <router-link to="/about" title="ABOUT">
           <span class="lt-md:hidden">ABOUT</span>
-          <div i-ri-article-line md:hidden />
+          <div i-material-symbols-sentiment-satisfied md:hidden text-18px />
         </router-link>
+        <a
+          href="https://twitter.com/Zhazhazhu_"
+          target="_blank"
+          title="Twitter"
+          class="lt-md:hidden"
+        >
+          <feather-twitter />
+        </a>
+        <a
+          href="https://github.com/zhazhazhu"
+          target="_blank"
+          title="GitHub"
+          class="lt-md:hidden"
+        >
+          <div class="i-mdi-github-face text-24px" />
+        </a>
       </div>
     </nav>
   </header>
