@@ -14,7 +14,7 @@ import Markdown from "vite-plugin-vue-markdown";
 import SVG from "vite-svg-loader";
 
 export default defineConfig({
-  base: "https://cdn.jsdelivr.net/gh/zhazhazhu/moments.me@1.0",
+  base: "https://cdn.jsdelivr.net/gh/zhazhazhu/moments.me@gh-pages",
   // base:"https://zhazhazhu.github.io/moments.me",
 
   resolve: {
