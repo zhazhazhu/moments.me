@@ -1,1 +1,0 @@
-import{o as e,c as o}from"./app.dda98280.js";const a={class:"markdown-body"},m="Zhazhazhu's About",_=!0,l={__name:"index",setup(r,{expose:t}){return t({frontmatter:{title:"Zhazhazhu's About",plum:!0}}),(n,c)=>(e(),o("div",a))}};export{l as default,_ as plum,m as title};
