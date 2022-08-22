@@ -20,8 +20,8 @@ function toggleDark() {
     <nav class="nav">
       <div class="spacer" />
       <div class="right">
-        <router-link to="/project" title="PROJECT">
-          <span class="lt-md:hidden">PROJECT</span>
+        <router-link to="/projects" title="PROJECTS">
+          <span class="lt-md:hidden">PROJECTS</span>
           <div i-material-symbols-list-alt-rounded md:hidden text-18px />
         </router-link>
         <router-link to="/about" title="ABOUT">

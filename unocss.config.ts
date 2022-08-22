@@ -3,10 +3,21 @@ import {
   presetAttributify,
   presetIcons,
   presetUno,
+  presetWebFonts,
 } from "unocss";
 
 export default defineConfig({
-  presets: [presetAttributify(), presetIcons(), presetUno()],
+  presets: [
+    presetAttributify(),
+    presetIcons(),
+    presetUno(),
+    presetWebFonts({
+      fonts: {
+        sans: "Inter",
+        mono: "DM Mono",
+      },
+    }),
+  ],
   rules: [],
   shortcuts: {
     "flex-center": "flex items-center justify-center",

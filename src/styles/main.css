@@ -88,3 +88,29 @@ html:not(.dark) [img-dark] {
 #app {
   width: 100vw;
 }
+
+@media screen and (min-width: 1200px) and (max-width: 3000px) {
+  .container {
+    width: 1000px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 700px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 590px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 520px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100% !important;
+  }
+}

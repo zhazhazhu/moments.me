@@ -15,6 +15,8 @@ declare module '@vue/runtime-core' {
     NavBar: typeof import('./../src/components/NavBar.vue')['default']
     Posts: typeof import('./../src/components/Posts.vue')['default']
     Project: typeof import('./../src/components/Project.vue')['default']
+    Projects: typeof import('./../src/components/Projects.vue')['default']
+    ProjectsList: typeof import('./../src/components/ProjectsList.vue')['default']
     RiMoonLine: typeof import('~icons/ri/moon-line')['default']
     RiSunLine: typeof import('~icons/ri/sun-line')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

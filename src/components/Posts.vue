@@ -104,7 +104,7 @@ const layout = computed<GridLayoutItem[]>(() => {
             :src="item.data?.image"
             class=""
             fit="contain"
-            :style="{ height: item.h === 3 ? '70%' : '60%' }"
+            :style="{ height: item.h === 3 ? '65%' : '55%' }"
           />
           <div class="flex-center m-t-10px">
             <template v-for="tag in item.data?.tags">
@@ -160,31 +160,6 @@ button {
 .page > .active {
   font-size: 12px;
   border-bottom: 1px solid;
-}
-@media screen and (min-width: 1200px) and (max-width: 3000px) {
-  .container {
-    width: 1000px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .container {
-    width: 700px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .container {
-    width: 790px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container {
-    width: 520px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .container {
-    width: 100%;
-  }
 }
 .container :deep(img) {
   object-fit: cover;
