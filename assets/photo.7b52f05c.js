@@ -1,0 +1,1 @@
+import{o,c as e,a as s}from"./app.2cff4819.js";const n={class:"markdown-body"},c=s("p",null,"developing",-1),r=[c],m="Photo Wall",d="",u="my photo",h=!0,f={__name:"photo",setup(a,{expose:t}){return t({frontmatter:{title:"Photo Wall",subtitle:"",description:"my photo",plum:!0}}),(i,p)=>(o(),e("div",n,r))}};export{f as default,u as description,h as plum,d as subtitle,m as title};
