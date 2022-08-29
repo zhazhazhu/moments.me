@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@qzzhu/core": "^0.0.7",
     "@vueuse/core": "^8.9.4",
     "@vueuse/head": "^0.7.7",
     "@vueuse/math": "^9.1.0",
@@ -20,7 +21,8 @@
     "nprogress": "^0.2.0",
     "vue": "^3.2.37",
     "vue-router": "4.1.2",
-    "vue3-grid-layout": "^1.0.0"
+    "vue3-grid-layout": "^1.0.0",
+    "vue3-touch-events": "npm:@qzzhu/touch-events@4.1.0"
   },
   "devDependencies": {
     "@iconify/json": "^2.1.72",

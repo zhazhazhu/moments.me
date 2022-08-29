@@ -6,6 +6,7 @@ overrides:
 specifiers:
   '@iconify/json': ^2.1.72
   '@octokit/rest': ^19.0.3
+  '@qzzhu/core': ^0.0.7
   '@types/degit': ^2.8.3
   '@types/diacritics': ^1.3.1
   '@types/fs-extra': ^9.0.13
@@ -52,8 +53,10 @@ specifiers:
   vue: ^3.2.37
   vue-router: 4.1.2
   vue3-grid-layout: ^1.0.0
+  vue3-touch-events: npm:@qzzhu/touch-events@4.1.0
 
 dependencies:
+  '@qzzhu/core': 0.0.7
   '@vueuse/core': 8.9.4_vue@3.2.37
   '@vueuse/head': 0.7.0_vue@3.2.37
   '@vueuse/math': registry.npmmirror.com/@vueuse/math/9.1.0_vue@3.2.37
@@ -62,6 +65,7 @@ dependencies:
   vue: 3.2.37
   vue-router: 4.1.2_vue@3.2.37
   vue3-grid-layout: 1.0.0
+  vue3-touch-events: /@qzzhu/touch-events/4.1.0
 
 devDependencies:
   '@iconify/json': 2.1.93
@@ -1849,6 +1853,20 @@ packages:
   /@polka/url/1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
+
+  /@qzzhu/core/0.0.7:
+    resolution: {integrity: sha512-ooF+5NmOLAMV8cHEOedJKwyl+eRo02AuX5xJ0/u4J7v5A3rOMdW7Hhlkwxe1LAwjdgotxbWAymvB259zmN+V7A==}
+    dependencies:
+      '@vueuse/core': 8.9.4_vue@3.2.37
+      lodash-es: 4.17.21
+      vue: 3.2.37
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: false
+
+  /@qzzhu/touch-events/4.1.0:
+    resolution: {integrity: sha512-vx2RMhx+tSP6z7hOSUBOtYs7eO14CPij5otAHycCqWHNSzp/6QyPEY0B9arOPa0xg0OXn15aHmjKBE5qHGobZQ==}
+    dev: false
 
   /@rollup/plugin-babel/5.3.1_56fnebo2rl23pzm3cph57q7t7i:
     resolution: {integrity: sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q==}
@@ -4227,6 +4245,10 @@ packages:
     dependencies:
       p-locate: 5.0.0
     dev: true
+
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: false
 
   /lodash.debounce/4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}

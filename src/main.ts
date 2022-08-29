@@ -8,6 +8,7 @@ import LocalizedFormat from "dayjs/plugin/localizedFormat.js";
 import NProgress from "nprogress";
 import autoRoutes from "pages-generated";
 import { ViteSSG } from "vite-ssg";
+import TouchEvents from "vue3-touch-events";
 import App from "./App.vue";
 
 const routes = autoRoutes.map((i) => {
@@ -21,6 +22,8 @@ export const createApp = ViteSSG(
   App,
   { routes },
   ({ app, router, isClient }) => {
+    app.use(TouchEvents);
+
     dayjs.extend(LocalizedFormat);
 
     if (isClient) {
