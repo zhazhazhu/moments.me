@@ -18,3 +18,9 @@ export interface Project {
   desc: string;
   icon: string;
 }
+
+export interface Photo {
+  path: string;
+  date: string;
+  description: string;
+}

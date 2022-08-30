@@ -96,17 +96,17 @@ html:not(.dark) [img-dark] {
 }
 @media screen and (max-width: 1200px) {
   .container {
-    width: 700px !important;
+    width: 600px !important;
   }
 }
 @media screen and (max-width: 992px) {
   .container {
-    width: 590px !important;
+    width: 490px !important;
   }
 }
 @media screen and (max-width: 768px) {
   .container {
-    width: 520px !important;
+    width: 420px !important;
   }
 }
 @media screen and (max-width: 576px) {
