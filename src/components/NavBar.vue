@@ -28,10 +28,6 @@ function toggleDark() {
           <span class="lt-md:hidden">PHOTO</span>
           <div i-ic-round-insert-photo md:hidden text-18px />
         </router-link>
-        <router-link to="/about" title="ABOUT">
-          <span class="lt-md:hidden">ABOUT</span>
-          <div i-material-symbols-sentiment-satisfied md:hidden text-18px />
-        </router-link>
         <a
           href="https://twitter.com/Zhazhazhu_"
           target="_blank"
