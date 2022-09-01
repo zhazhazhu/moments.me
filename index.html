@@ -18,6 +18,7 @@
         const setting = localStorage.getItem("vueuse-color-scheme") || "auto";
         if (setting === "dark" || (prefersDark && setting !== "light"))
           document.documentElement.classList.toggle("dark", true);
+        else document.documentElement.classList.toggle("light", true);
       })();
     </script>
   </head>

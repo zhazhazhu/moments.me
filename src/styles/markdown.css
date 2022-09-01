@@ -106,10 +106,10 @@ h6:focus .header-anchor {
   opacity: 0.5;
 }
 
-.markdown-body {
+html.dark .markdown-body {
   background-color: #1b1b1b;
 }
-.markdown-body a:hover {
+html .markdown-body a:hover {
   text-decoration: none;
 }
 
