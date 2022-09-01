@@ -1,8 +1,14 @@
 <template>
-  <a v-if="isExternalLink" v-bind="$attrs" :href="to" target="_blank">
+  <a
+    v-if="isExternalLink"
+    v-bind="$attrs"
+    :href="to"
+    target="_blank"
+    class="text-white!"
+  >
     <slot />
   </a>
-  <router-link v-else v-bind="$props">
+  <router-link v-else v-bind="$props" class="text-white!">
     <slot />
   </router-link>
 </template>

@@ -21,6 +21,8 @@ const routes: Moment[] = router
     path: i.path,
     image: import.meta.env.DEV
       ? i.meta.frontmatter.image
+      : (i.meta.frontmatter.image as string).includes("http")
+      ? i.meta.frontmatter.image
       : import.meta.env.VITE_CDN + i.meta.frontmatter.image,
     title: i.meta.frontmatter.title,
     date: i.meta.frontmatter.date,

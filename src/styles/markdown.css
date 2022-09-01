@@ -106,6 +106,13 @@ h6:focus .header-anchor {
   opacity: 0.5;
 }
 
+.markdown-body {
+  background-color: #1b1b1b;
+}
+.markdown-body a:hover {
+  text-decoration: none;
+}
+
 .prose blockquote {
   font-weight: normal;
   font-style: normal;

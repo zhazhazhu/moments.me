@@ -1,4 +1,5 @@
 import "@unocss/reset/tailwind.css";
+import "github-markdown-css/github-markdown.css";
 import "uno.css";
 import "./styles/main.css";
 import "./styles/markdown.css";

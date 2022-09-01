@@ -7,7 +7,7 @@ const { data } = defineProps<{
 }>();
 
 const { value, last, next, resume } = useSlide(data, {
-  intervalTime: 6000,
+  intervalTime: 8000,
 });
 
 function onSwipe(direction: "left" | "right" | "top" | "bottom") {
