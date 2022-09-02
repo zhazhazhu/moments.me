@@ -5,13 +5,17 @@ function toggleDark() {
   isDark.value = !isDark.value;
 }
 
-watch(isDark, (val) => {
-  if (val) {
-    import("github-markdown-css/github-markdown-dark.css");
-  } else {
-    import("github-markdown-css/github-markdown-light.css");
-  }
-});
+watch(
+  isDark,
+  (val) => {
+    if (val) {
+      import("github-markdown-css/github-markdown-dark.css");
+    } else {
+      import("github-markdown-css/github-markdown-light.css");
+    }
+  },
+  { immediate: true }
+);
 </script>
 
 <template>
