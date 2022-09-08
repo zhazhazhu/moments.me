@@ -1,1 +1,0 @@
-import{o,c as e,a}from"./app.f2c59b5d.js";const s={class:"markdown-body"},n=a("p",null,"Hello Markdown Github",-1),r=[n],i={__name:"markdown-github",setup(c,{expose:t}){return t({frontmatter:{}}),(d,l)=>(o(),e("div",s,r))}};export{i as default};
