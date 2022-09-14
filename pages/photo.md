@@ -3,6 +3,18 @@ title: Photo Wall
 description: "my photo"
 plum: true
 photos:
+  - path: "https://cdn.jsdelivr.net/gh/zhazhazhu/image-hosting@master/blog-photo/IMG_6986_wovcmk.jpeg"
+    date: "2022-09-15"
+    description: "love"
+- path: "https://cdn.jsdelivr.net/gh/zhazhazhu/image-hosting@master/blog-photo/IMG_6984_hpq0oq.jpeg"
+    date: "2022-09-15"
+    description: "love"
+- path: "https://cdn.jsdelivr.net/gh/zhazhazhu/image-hosting@master/blog-photo/IMG_6986_wovcmk.jpeg"
+    date: "2022-09-15"
+    description: "love"
+- path: "https://cdn.jsdelivr.net/gh/zhazhazhu/image-hosting@master/blog-photo/IMG_6975_7fbapb.jpeg"
+    date: "2022-09-15"
+    description: "love"
   - path: "https://cdn.jsdelivr.net/gh/zhazhazhu/image-hosting@master/blog-photo/WechatIMG235_f6tvl0_.jpeg"
     date: "2022-08-31"
     description: "Cat"
